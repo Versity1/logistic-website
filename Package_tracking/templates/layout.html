@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>{% block title %}Home - Logistic {% endblock %}</title>
+  <title>{% block title %}Home - Prime Global Logistics {% endblock %}</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -37,7 +37,7 @@
           <a href="/" class="logo d-flex align-items-center me-auto">
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1 class="sitename">Logis</h1>
+            <h1 class="sitename">Prime Global Logistics</h1>
           </a>
           <nav id="navmenu" class="navmenu">
             <ul>
@@ -46,11 +46,12 @@
               <li><a href="{% url 'services' %}">Services</a></li>
               <!-- <li><a href="pricing.html">Pricing</a></li> -->
               <li><a href="{% url 'contact' %}">Contact</a></li>
+              <li><a href="{% url 'track' %}">Track Package</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
           </nav>
     
-          <a class="btn-getstarted" href="{% url 'track' %}">Track Package</a>
+          
     
         </div>
       </header>
@@ -62,9 +63,9 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-about">
             <a href="/" class="logo d-flex align-items-center">
-              <span class="sitename">Logis</span>
+              <span class="sitename">Prime Global Logistics</span>
             </a>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <p>Prime Global Logistics is a leading logistics company. We have a strong commitment to providing top-notch services to our clients.</p>
             <div class="social-links d-flex mt-4">
               <a href=""><i class="bi bi-twitter-x"></i></a>
               <a href=""><i class="bi bi-facebook"></i></a>
@@ -84,7 +85,7 @@
             </ul>
           </div>
   
-          <div class="col-lg-2 col-6 footer-links">
+          {% comment %} <div class="col-lg-2 col-6 footer-links">
             <h4>Our Services</h4>
             <ul>
               <li><a href="#">Web Design</a></li>
@@ -94,24 +95,22 @@
               <li><a href="#">Graphic Design</a></li>
             </ul>
           </div>
-  
+   {% endcomment %}
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
             <h4>Contact Us</h4>
             <p>A108 Adam Street</p>
             <p>New York, NY 535022</p>
             <p>United States</p>
             <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p><strong>Email:</strong> <span>admin@primeglobal.tech</span></p>
           </div>
   
         </div>
       </div>
   
       <div class="container copyright text-center mt-4">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">Logis</strong> <span>All Rights Reserved</span></p>
-        <div class="credits">
-          Designed by <a href="https://versitysolutions.ng/">Versity ICT Solutions</a>
-        </div>
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Prime Global Logistics</strong> <span>All Rights Reserved</span></p>
+        
       </div>
     </footer>
 <!-- Scroll Top -->

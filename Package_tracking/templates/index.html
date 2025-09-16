@@ -13,7 +13,7 @@
         <div class="row gy-4 d-flex justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
             <h2 data-aos="fade-up">Your Lightning Fast Delivery Partner</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
+            <p data-aos="fade-up" data-aos-delay="100">We make shipping easy and efficient. Eliminating the hassle of logistics. You can rely on us for all your delivery needs.</p>
 
             {% if package %}
         <div class="alert alert-info" role="alert">
@@ -27,45 +27,22 @@
             <p class="mb-0">Last updated: {{ package.updated_at }}</p>
         </div>
         {% endif %}
-        
-    
-
-            <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-              {% csrf_token %}
-              {{ form }}
-              <button type="submit" class="btn btn-primary">Track Package</button>
-            </form>
-
+            <a class="btn btn-primary active" href="{% url 'track' %}">Track Your Package</a>
             <div class="row gy-4" data-aos="fade-up" data-aos-delay="300">
 
               <div class="col-lg-3 col-6">
                 <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="0" class="purecounter">232</span>
-                  <p>Clients</p>
+                  <span data-purecounter-start="0" data-purecounter-end="232090" data-purecounter-duration="0" class="purecounter">232090+</span>
+                  <p>Customers</p>
                 </div>
               </div><!-- End Stats Item -->
 
               <div class="col-lg-3 col-6">
                 <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">521</span>
-                  <p>Projects</p>
+                  <span data-purecounter-start="0" data-purecounter-end="5219900" data-purecounter-duration="0" class="purecounter">5219900+</span>
+                  <p>Packages Moved</p>
                 </div>
               </div><!-- End Stats Item -->
-
-              <div class="col-lg-3 col-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="0" class="purecounter">1453</span>
-                  <p>Support</p>
-                </div>
-              </div><!-- End Stats Item -->
-
-              <div class="col-lg-3 col-6">
-                <div class="stats-item text-center w-100 h-100">
-                  <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="0" class="purecounter">32</span>
-                  <p>Workers</p>
-                </div>
-              </div><!-- End Stats Item -->
-
             </div>
 
           </div>
@@ -351,71 +328,6 @@
       </div>
 
     </section><!-- /Features Section -->
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span>Pricing</span>
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free Plan</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class="buy-btn">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="pricing-item featured">
-              <h3>Business Plan</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class="buy-btn">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="pricing-item">
-              <h3>Developer Plan</h3>
-              <h4><sup>$</sup>49<span> / month</span></h4>
-              <ul>
-                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
-                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
-                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
-                <li><i class="bi bi-check"></i> <span>Pharetra massa massa ultricies</span></li>
-                <li><i class="bi bi-check"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-              </ul>
-              <a href="#" class="buy-btn">Buy Now</a>
-            </div>
-          </div><!-- End Pricing Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Pricing Section -->
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section dark-background">
