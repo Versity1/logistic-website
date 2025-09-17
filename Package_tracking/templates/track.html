@@ -19,15 +19,20 @@
   <div class="container mt-5">
     <h1>Track Your Package</h1>
     {% if package %}
-        <div class="alert alert-info" role="alert">
-            <div class="alert-brand">
-              <img class="text-center" src="{% static 'assets/img/features-1.jpg' %}" alt="" width="100%">
+        <div class="card justify-content-center align-items-start mx-3 p-3 my-2" style="width: 100%;">
+            <div class="card-header">
+              <img class="text-center" src="{% static 'assets/img/features-1.jpg' %}" alt="" width="95%">
             </div>
-            <h4 class="alert-heading py-2 my-2">Tracking ID: {{ package.tracking_id }}</h4>
+            <h4 class="card-title py-2 my-2 text-danger">Tracking ID: {{ package.tracking_id }}</h4>
             <p>Receiver: {{ package.receiver_name }}</p>
             <p>Status: <strong>{{ package.get_status_display }}</strong></p>
             <hr>
             <p class="mb-0">Last updated: {{ package.updated_at }}</p>
+            <p>Expected Delivery Date: {{ package.expected_delivery_date }}</p>
+            <p>Delivery Address: {{ package.delivery_address }}</p>
+            <p>Current Location: {{ package.current_location }}</p>
+            <p>From Location: {{ package.from_location }}</p>
+            <p>To Location: {{ package.to_location }}</p>
         </div>
     {% else %}
         <form method="post" class="mx-2 px-2 my-3 py-3">

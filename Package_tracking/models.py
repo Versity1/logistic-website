@@ -6,6 +6,7 @@ class Package(models.Model):
         ('processing', 'Processing'),
         ('shipped', 'Shipped'),
         ('in_transit', 'In Transit'),
+        ('customs_clearance', 'Customs Clearance'),
         ('out_for_delivery', 'Out for Delivery'),
         ('delivered', 'Delivered'),
     ]
@@ -17,6 +18,11 @@ class Package(models.Model):
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='processing')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    expected_delivery_date = models.DateField(null=True, blank=True)
+    delivery_address = models.TextField(blank=True, null=True)
+    current_location = models.CharField(max_length=255, null=True, blank=True)
+    from_location = models.CharField(max_length=255, null=True, blank=True)
+    to_location = models.CharField(max_length=255, null=True, blank=True)
 
     def __str__(self):
         return f"{self.tracking_id} - {self.receiver_name}"
